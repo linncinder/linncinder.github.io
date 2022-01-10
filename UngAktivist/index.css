@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+  }
+  
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)), url(./bilder/forside_bilde.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -5;
+  }
+
+.overskrift{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+  }
+
+.overskrift > h1{
+    font-size: 150px;
+    color: #fff;
+  }
+
+.overskrift > p{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: #fff;
+  }
+
+.engasjer{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+
+.engasjer div:hover{
+  width: 400px;
+  height: 250px;
+  transition: 1s;
+}
+
+#miljo {
+  background-image: url(./bilder/miljo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#politikk {
+  background-image: url(./bilder/politikk.jpg) ;
+  background-position: center;
+  background-size: cover;
+}
+
+#rettigheter {
+  background-image: url(./bilder/rettigheter.jpg);
+  background-position: center;
+  background-size: cover;
+}           
+
+.index_innhold {
+    width:100%;
+    text-align: center;
+    padding-top: 10px; 
+  }
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+.engasjer div{
+  width: 350px;
+  height: 200px;
+  border-radius: 12px;
+}
+
+.engasjer div h2{
+  padding-top: 150px;
+}
+
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #fff;
+  }
+
+.kilde_bakgrunn{
+  background-color:#333;
+  color: #fff;
+  padding: 20px;
+  text-align:center;
+}
+
+#sidekilde h3{
+  border-bottom: 1px solid #eee;
+}
+
+#sidekilde a:hover{
+  color: #eb1325;
+}
+
+@media(max-width: 700px){
+
+  .overskrift h1{
+    font-size: 40px;
+  }
+  .overskrift p {
+    font-size: 20px;
+  }
+
+  .row{
+      flex-direction:column;
+      align-items: center;
+    }
+                
+    #sidekilder{
+      text-align: center;
+    }
+}

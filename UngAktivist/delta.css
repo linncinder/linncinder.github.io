@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+  }
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)), url(./bilder/miljo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -5;
+  }
+
+.headerR{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)), url(./bilder/rettigheter.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -5;
+  }
+
+.headerP{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)), url(./bilder/politikk.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -5;
+  }
+
+.headerPO{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)), url(./bilder/politisk_fravaer.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+.overskrift{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+    border-bottom: 1px solid #eee
+  }
+
+.overskrift  h1{
+    font-size: 150px;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+.PO_hoved {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  text-align: center;
+  width: 70%;
+  color: #fff;
+  font-size: 30px;
+}
+
+#lenkerPO {
+    color: #fff;
+ }
+
+#lenkerPO:hover {
+   color: #eb1325;
+ }
+
+.grupper {
+  text-align: center;
+  margin: 30px;
+ 
+}
+
+.grupper h1 {
+  font-size: 60px;
+   color: #000;
+}
+
+.grupper p {
+  font-size: 30px;
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+
+ul li{
+  margin: 25px;
+  text-align: left;
+  list-style-type: none;
+}
+
+ul li .lenker {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul li .lenker:hover{
+  color: #eb1325;
+  background-color: #000;
+  padding: 10px; 
+  border: #000 solid 1 px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #eb1325;
+}
+
+#bilde img{
+  height: auto;
+  width: 75%;
+}
+#bilde{
+  position: absolute;
+  top: 130%;
+  left: 40%;
+}
+
+#bilde1 img{
+  height: auto;
+  width: 75%;
+}
+#bilde1{
+  margin-top: 40px;
+  position: absolute;
+  top: 122%;
+  left: 40%;
+}
+
+#bilde2 img{
+  height: auto;
+  width: 75%;
+}
+#bilde2{
+  margin-top: 40px;
+  position: absolute;
+  top: 122%;
+  left: 40%;
+}
+
+.container{
+  display:flex;
+  justify-content: space-between;
+  
+}
+
+#miljo_grupper {
+  margin-top: 150px;
+}
+
+#rettigheter{
+  margin-top: 200px;
+}
+
+@media(max-width: 1000px){
+
+  .overskrift h1{
+    font-size: 35px;
+  
+  }
+
+  .overskrift {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  }
+
+  
+  .PO_hoved{
+      font-size: 20px;
+      position: absolute;
+      top: 45%;
+      left: 5%;
+      width: 90%;
+      margin: 0;
+    }
+
+
+  .grupper h1 {
+    font-size: 60px;
+   }
+
+   
+  .grupper p {
+  font-size: 18px;
+  }
+
+.lenker_liste{
+  display: block;
+
+  }
+
+  /*.lenker_liste li{
+    text-align: center;
+  }*/
+  
+
+  .lenker_liste li .lenker {
+  font-size: 18px;
+  display: visible;
+  }
+
+
+  #bilde  {
+    visibility: hidden;
+  }
+
+  #bilde1 {
+    visibility: hidden;
+  }
+
+  #bilde2 {
+    visibility: hidden;
+  } 
+
+  #miljo_grupper {
+    margin-top: 20px;
+  }
+
+  #rettigheter{
+    margin-top: 20px;
+  }
+
+}
