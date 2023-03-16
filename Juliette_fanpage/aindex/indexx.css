@@ -1,0 +1,160 @@
+/*html, body {
+  height: 100%;
+  width: 100%;
+}*/
+
+body{
+    background: 
+    rgb(249, 224, 174); 
+  }
+  
+  .container{
+    height: 91vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .pic{
+    width: 40vw;
+    height: auto;
+    margin-left: 30vw;
+  }
+  
+  .pic:hover{
+    animation: animateHeart 1.2s infinite;
+  }
+  
+  #textEl{
+    width: 40vw;
+    height: 70vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border: rgb(104, 44, 14) solid 1px;
+    padding: 3%;
+    background-color: rgba(104, 44, 14, 0.5);
+  } 
+  
+  /*
+  #brukerTekst h3 {
+    margin: 3vh;
+    color: rgb(104, 44, 14);
+  }
+  
+  
+  #brukerTekst input {
+    margin: 3vh;
+  }
+  */
+  #textEl h1{
+    text-align: center;
+    color: rgb(104, 44, 14);
+    justify-content: center;
+  }
+  
+  #textEl p{
+    margin: 3vh;
+    color: rgb(104, 44, 14);
+  } 
+  /*
+  #brukerTekst p {
+    margin: 3vh;
+    color: rgb(104, 44, 14);
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  */
+  
+  #main {
+    width: 60%;                  
+    margin: 50px auto;          
+    padding: 40px;	             
+    background-color: rgba(104, 44, 14, 0.5); 	 
+    border: rgb(104, 44, 14) solid 1px; 
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main h1 {
+    text-align: center;
+    color: rgb(104, 44, 14);
+  }
+
+  
+
+  #BtnInput {
+    text-align: center;
+    padding: 2%;
+  }
+
+
+#button{
+  background-color: rgb(249, 224, 174);
+  border-radius: 20%;
+  width: 7vw;
+  height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#button:hover{
+  background-color: rgb(104, 44, 14, 0.5);
+}
+#text{
+  height: 40px;
+}
+#input{
+  padding: 7px;
+} 
+  
+  
+  .fab{
+    margin-right: 10px;
+  } 
+  
+  @media(max-width: 968px){
+      .container{
+    flex-direction: column;
+        align-items: center;
+  }
+    #text{
+    list-style: none;
+    display: inline-block;
+    }
+    
+    #textEl{
+      width: 70vw;
+      margin-bottom: 10vh;
+    }
+    #textEl p{
+      font-size:15px;
+    }
+    .like{
+      margin-top: 10vh;
+    }
+  }
+  
+  @keyframes animateHeart {
+    0% {
+      transform: scale(1);
+    }
+    5% {
+      transform: scale(0.8);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    15% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+
+    
+  }
